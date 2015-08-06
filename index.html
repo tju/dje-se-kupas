@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Pronađi se u Beogradu!</title>
+    <meta name="description" content="A dje ti voliš da se kupaš ?">
+    <meta name="author" content="Aries, Ivan Ćurković, Nemanja Čizmić, Marko Škuletić, Margareta Nedeljković">
+    <meta name="classification" content="Web Development"/>
+    <meta name="language" content="Serbian, Srpski"/>
+
+    <meta property="og:title" content="Dje se kupaš?"/>
+    <meta property="og:type" content="game"/>
+    <meta property="og:description" content="Dje se kupaš !? Imaš 30 sekundi da se nađeš na koju si se plažu kupao"/>
+    <meta property="og:url" content="http://fun.aries.rs/pronadji-se-u-beogradu/"/>
+    <meta property="og:image" content="http://fun.aries.rs/pronadji-se-u-beogradu/img/pronadji-se-u-beogradu.png"/>
+    <meta property="og:site_name" content="DJE SE KUPAS | Powered by Aries: Coloring The Web”"/>
+
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link rel="image" type="image/jpeg" href="http://aries.rs/images/logo.png"/>
+    <link rel="apple-touch-icon-precomposed" href="img/apple_touch_icon.png"/>
+    <link rel='canonical' href='http://fun.aries.rs/pronadji-se-u-beogradu/'/>
+    <link rel='shortlink' href='http://fun.aries.rs/pronadji-se-u-beogradu/'/>
+
+    <link rel='stylesheet' href='css/bootstrap.css'/>
+    <link rel='stylesheet' href='css/style.css'/>
+    <link rel="image" type="image/jpeg" href="http://aries.rs/images/logo.png"/>
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDduran98iEvgMc_fJxE_sRtb_T3zOjZPQ&sensor=false&libraries=geometry'></script>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+
+    <script>(function (G, o, O, g, l) {
+        G.GoogleAnalyticsObject = O;
+        G[O] || (G[O] = function () {
+            (G[O].q = G[O].q || []).push(arguments)
+        });
+        G[O].l = +new Date;
+        g = o.createElement('script'), l = o.scripts[0];
+        g.src = '//www.google-analytics.com/analytics.js';
+        l.parentNode.insertBefore(g, l)
+    }(this, document, 'ga'));
+    ga('create', 'UA-49377306-2');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview')</script>
+</head>
+<body>
+<div id='content'>
+    <div id="roundEnd"></div>
+    <div id="logo"></div>
+    <div id="endGame"></div>
+    <div id='scoreBoard'>
+        <span class='round'>Trenutna runda: <b>1 od 5</b></span><br/>
+        <span class='roundScore'>Rezultat iz prethodne runde: <b>0</b></span><br/>
+        <span class='totalScore'>Rezultat: <b>0</b></span>
+    </div>
+    <div id='miniMap'></div>
+    <div id='timer'></div>
+    <div id='guessButton' class="btn btn-large btn-primary">Pogađaj</div>
+    <div id='pano'></div>
+    <footer>Powered by <a href="http://www.aries.rs/" target="_blank">ARIES.</a></footer>
+</div>
+<script type='text/javascript' src='js/rnd.js'></script>
+<script type='text/javascript' src='js/minimap.js'></script>
+<script type='text/javascript' src='js/streetviewmap.js'></script>
+<script type='text/javascript' src='js/roundmap.js'></script>
+<script type='text/javascript' src='js/app.js'></script>
+</body>
+</html>
