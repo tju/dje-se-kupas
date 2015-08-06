@@ -5,8 +5,8 @@ function mminitialize() {
     var guessMarker;
     // Mini map setup
     var mapOptions = {
-        center: new google.maps.LatLng(42.3496217,19.3461226, true),
-        zoom: 10,
+        center: new google.maps.LatLng(42.245166, 18.886891, true),
+        zoom: 8,
         mapTypeControl: false,
         streetViewControl: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP
