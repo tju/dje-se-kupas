@@ -172,7 +172,7 @@ $(document).ready(function () {
 
         // If distance is undefined, that means they ran out of time and didn't click the guess button
         if (typeof distance === 'undefined' || ranOut == true) {
-            $('#roundEnd').html('<p>Morate biti brži, vaše vreme je isteklo!.<br/> Niste osvojili poene u ovoj rundi.<br/><br/><button class="btn btn-primary btn-large closeBtn" type="button">Nastavi</button></p></p>');
+            $('#roundEnd').html('<p>Morate biti brži, vaše vreme je isteklo!.<br/> Niste osvojili poene u ovoj rundi.<br/><br/><button class="btn btn-large closeBtn" type="button">Nastavi</button></p></p>');
             $('#roundEnd').fadeIn();
             // Stop Counter
             clearInterval(counter);
@@ -189,7 +189,7 @@ $(document).ready(function () {
             points = 0;
 
         } else {
-            $('#roundEnd').html('<p>Vaša lokacija je udaljena <br/><strong><h1>' + distance + '</strong> metara</h1> <p>od markirane lokacije.</p><br/><div id="roundMap"></div><br/> <p>Dobili ste</p><h1>' + roundScore + ' poena</h1> <p>u ovoj rundi!</p><button class="btn btn-primary btn-large closeBtn" type="button">Nastavi dalje</button></p></p>');
+            $('#roundEnd').html('<p>Vaša lokacija je udaljena <br/><strong><h1>' + distance + '</strong> metara</h1> <p>od markirane lokacije.</p><br/><div id="roundMap"></div><br/> <p>Dobili ste</p><h1>' + roundScore + ' poena</h1> <p>u ovoj rundi!</p><button class="btn btn-large closeBtn" type="button">Nastavi dalje</button></p></p>');
             $('#roundEnd').fadeIn();
         }
         // Reset Params
@@ -202,8 +202,8 @@ $(document).ready(function () {
         totalScore = totalScore + points;
         $('#miniMap, #pano, #guessButton, #scoreBoard, #timer').hide();
         $('#logo').html('<div class="logo"></div>');
-        $('#endGame').html('<h1>Čestitamo!</h1><h2>Vaš rezultat je:</h2><h1>'
-            + totalScore + '!</h1><br/><p>Šeruj ovo na:</p><br/><a class="btn btn-large facebook fb-share-button" href="https://www.facebook.com/sharer/sharer.php?src=100&p[url]=' + encodeURIComponent('http://fun.aries.rs/pronadji-se-u-beogradu/') + '" target="_blank"><i class="fa fa-facebook fa-lg"></i><span>Facebook</span></a> <a class="btn btn-large twitter" href="https://twitter.com/intent/tweet?text=Upravo+sam+osvojio+' + totalScore + '+poena+u+igri+PRONAĐI+SE+U+BEOGRADU+@AriesCTW%21&url=http://fun.aries.rs/pronadji-se-u-beogradu/" target="_blank"><i class="fa fa-twitter fa-lg"></i><span class="rps-text">Twitter</span></a></p><br/><button class="btn btn-large playAgain" type="button">Igraj ponovo?</button>');
+        $('#endGame').html('<h1>Osvojeno</h1>'
+            + '<h2>' + totalScore + ' poena!</h2>' + '</h1><br/><p>Čuš, ako ćeš se pohvaliti sa ovoliko poena<br> evo dugmići za socijajne mreže:</p><br/><a class="btn btn-large facebook fb-share-button" href="https://www.facebook.com/sharer/sharer.php?src=100&p[url]=' + encodeURIComponent('http://djesekupas.com') + '" target="_blank"><i class="fa fa-facebook fa-lg"></i><span>Facebook</span></a> <a class="btn btn-large twitter" href="https://twitter.com/intent/tweet?text=Upravo+sam+osvojio+' + totalScore + '+poena+u+igri+DJE+SE+KUPAŠ+@AriesCTW%21&url=http://djesekupas.com" target="_blank"><i class="fa fa-twitter fa-lg"></i><span class="rps-text">Twitter</span></a></p><br/><button class="btn btn-large" type="button">Igraj ponovo?</button>');
         $('#endGame').fadeIn(500);
         $('#logo').fadeIn(700);
         $('#share').fadeIn(700);
