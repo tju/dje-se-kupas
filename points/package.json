@@ -1,0 +1,16 @@
+{
+  "name": "points",
+  "version": "1.0.0",
+  "description": "points in the game",
+  "main": "points.js",
+  "dependencies": {
+    "tape": "~4.0.2",
+    "faucet": "0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js | faucet"
+  },
+  "author": "ivan.curkovic",
+  "license": "ISC"
+}
