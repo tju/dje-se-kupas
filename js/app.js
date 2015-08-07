@@ -107,7 +107,7 @@ $(document).ready(function () {
             window.locArray = locLatLongs.replace(/[\])}[{(]/g, '').split(',');
             window.guessArray = guessLatLongs.replace(/[\])}[{(]/g, '').split(',');
             // Calculate distance between points, and convert to kilometers
-            distance = Math.ceil(calcDistance(window.locArray[0], window.locArray[1], window.guessArray[0], window.guessArray[1]) / 10);
+            distance = Math.ceil(calcDistance(window.locArray[0], window.locArray[1], window.guessArray[0], window.guessArray[1]));
             // Calculate points awarded via guess proximity
             function inRange(x, min, max) {
                 return (min <= x && x <= max);
@@ -189,7 +189,7 @@ $(document).ready(function () {
             points = 0;
 
         } else {
-            $('#roundEnd').html('<p>Vaša lokacija je udaljena <br/><strong><h1>' + distance + '0</strong> metara</h1> <p>od markirane lokacije.</p><br/><div id="roundMap"></div><br/> <p>Dobili ste</p><h1>' + roundScore + ' poena</h1> <p>u ovoj rundi!</p><button class="btn btn-primary btn-large closeBtn" type="button">Nastavi dalje</button></p></p>');
+            $('#roundEnd').html('<p>Vaša lokacija je udaljena <br/><strong><h1>' + distance + '</strong> metara</h1> <p>od markirane lokacije.</p><br/><div id="roundMap"></div><br/> <p>Dobili ste</p><h1>' + roundScore + ' poena</h1> <p>u ovoj rundi!</p><button class="btn btn-primary btn-large closeBtn" type="button">Nastavi dalje</button></p></p>');
             $('#roundEnd').fadeIn();
         }
         // Reset Params
